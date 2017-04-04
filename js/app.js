@@ -37,29 +37,28 @@ var Player = function(x,y) {
     this.x = x;
     this.y = y;
     this.sprite = 'images/char-boy.png';
-}
-//到达河边就跳回初始位置。
+};
+//玩家到达河边就跳回初始位置。碰撞检测，发生碰撞就回到初始位置。
 Player.prototype.update = function() {
     if (this.y === -11) {
-        this.x = 200;
+        this.x = 202;
         this.y = 404;
     }
-}
-
-Player.prototype.checkCollisions = function() {
-     for( var i = 0 ; i < allEnemies.length; i++) {
+    for( var i = 0 ; i < allEnemies.length; i++) {
         if (Math.abs(this.y - allEnemies[i].y) < 30) {
-            if (Math.abs(this.x - allEnemies[i].x) < 40) {
+            if (Math.abs(this.x - allEnemies[i].x) < 75) {
                 this.x = 202;
                 this.y = 404;
             }
         }
-     }
-}
+     };
+};
+
+
 
 Player.prototype.render = function() {
     ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
-}
+};
 //人物移动控制，且不允许人物移动出边界
 Player.prototype.handleInput = function(handle) {
     switch(handle) {
@@ -84,7 +83,7 @@ Player.prototype.handleInput = function(handle) {
             
         } break;
     }
-}
+};
 
 // Now instantiate your objects.
 // Place all enemy objects in an array called allEnemies
@@ -92,10 +91,8 @@ Player.prototype.handleInput = function(handle) {
 var allEnemies = [];
 for (var i = 0 ; i < 6; i++){
     var enemy = new Enemy(-101,83*(i%3)+60);
-
-    allEnemies.push(enemy);
-    
-}
+    allEnemies.push(enemy);  
+};
 
 var player = new Player(202,404);
 
