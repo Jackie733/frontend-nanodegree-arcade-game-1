@@ -62,25 +62,21 @@ Player.prototype.render = function() {
 //人物移动控制，且不允许人物移动出边界
 Player.prototype.handleInput = function(handle) {
     switch(handle) {
-        case 'left' : if (this.x > -2) {
+        case 'left' : if (this.x > 0) {
             this.x -= 101;
-            console.log(this.x);
-            
+            console.log(this.x);            
         } break;
-        case 'right' : if (this.x < 402) {
+        case 'right' : if (this.x < 404) {
             this.x += 101;
-            console.log(this.x);
-            
+            console.log(this.x);            
         } break;
         case 'up' : if (this.y > 0) {
             this.y -= 83;
-            console.log(this.y);
-            
+            console.log(this.y);           
         } break;
         case 'down' : if(this.y < 404) {
             this.y += 83;
-            console.log(this.y);
-            
+            console.log(this.y);           
         } break;
     }
 };

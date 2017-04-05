@@ -1,6 +1,22 @@
-frontend-nanodegree-arcade-game
-===============================
+#  经典街机游戏克隆
 
-Students should use this [rubric](https://review.udacity.com/#!/projects/2696458597/rubric) for self-checking their submission. Make sure the functions you write are **object-oriented** - either class functions (like Player and Enemy) or class prototype functions such as Enemy.prototype.checkCollisions, and that the keyword 'this' is used appropriately within your class and class prototype functions to refer to the object the function is called upon. Also be sure that the **readme.md** file is updated with your instructions on both how to 1. Run and 2. Play your arcade game.
+## 游戏介绍
 
-For detailed instructions on how to get started, check out this [guide](https://docs.google.com/document/d/1v01aScPjSWCCWQLIpFqvg3-vXLH2e8_SZQKC8jNO0Dc/pub?embedded=true).
+玩家控制小人物躲避虫子的冲撞，顺利过街，到达河边就算胜利，胜利后人物会复位到初始位置。
+
+## 游戏操作
+
+控制键盘的“上”、“下”、“左”、“右”键来使小人物上下左右移动。
+
+## 开始游戏
+
+您可以从我的Github库下载所有文件来进行本地游戏：
+
+```javascript
+$ git clone git@github.com:Jackie733/frontend-nanodegree-arcade-1.git
+```
+
+您也可以登录我的[网站](https://jackie733.github.io)直接开始游玩该游戏。
+
+
+
