@@ -13,7 +13,7 @@
 您可以从我的Github库下载所有文件来进行本地游戏：
 
 ```javascript
-$ git clone git@github.com:Jackie733/frontend-nanodegree-arcade-1.git
+$ git clone git@github.com:Jackie733/frontend-nanodegree-arcade-game-1.git
 ```
 
 您也可以登录我的[网站](https://jackie733.github.io)直接开始游玩该游戏。
